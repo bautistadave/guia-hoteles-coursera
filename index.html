@@ -8,85 +8,126 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">Hoteles-Bolivia</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="precios.html">Pricing</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+
     <div class="jumbotron">
         <h1>Hoteles-Bolivia</h1>
     </div>
-    <div class="container d-flex flex-wrap">
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+            </ol>
+        </nav>
+    </div>
+    <div class="container">
+        <!-- useicon.com  -->
         <div class="row">
             <div class="col-sm-4">
-                <h3>Como funciona?</h3>
-                <p>Busca hoteles segun tu preferencia.</p>
+                <button class="btn btn-primary" type="button"  href="#funciona" data-toggle="collapse"  data-target="#funciona" role="button" aria-expanded="false" aria-controls="funciona-collapse">
+                 Como funciona?   
+                </button>
             </div>
             <div class="col-sm-4">
                 <h3>Donde puedo reservar?</h3>
-                <p>Debe escoger una ciudad y posteriormente un hotel acorde a tus necesidades .</p>
+                <p>Debe escoger una ciudad y posteriormente un hotel acorde a tus necesidades.</p>
             </div>
             <div class="col-sm-4">
                 <h3>Como puedo pagar?</h3>
                 <p>Use el metodo de su prefecia (paypal, tarjeta, etc).</p>
             </div>
         </div>
+        <div class="row">
+            <div class="col-sm-4 collapse multi-collapse" id="funciona">
+                <h3>Como funciona?</h3>
+                <p>Busca hoteles segun tu preferencia.</p>
+            </div>
+        </div>
         <hr>
+
         <div class="d-flex flex-wrap">
-            <div class="card-hotel d-flex flex-column">
-                <div>
-                    <h4>Hotel CBBA</h4> 
+            <div class="card card-hotel d-flex flex-column">
+                <img src="hotel.PNG" alt="" class="card-img-top">
+                <div class="card-body">
+                    <h4 class="card-title">Hotel CBBA</h4> 
                     <p>Ubicado en la zona norte de nuestra ciudad y una vista espectacular.</p> 
                 </div>
                 <div>
                     <button class="btn btn-primary">Reservar</button>
                 </div>
             </div>
-            <div class="card-hotel d-flex flex-column">
-                
-                <div>
-                    <h4>Hotel LP</h4> 
+            <div class="card card-hotel d-flex flex-column">
+                <img src="hotel.PNG" alt="" class="card-img-top">
+                <div class="card-body">
+                    <h4 class="card-title">Hotel LP</h4> 
                     <p>Ubicado en la zona sud, con un clima agradable.</p> 
                 </div>
                 <div>
                     <button class="btn btn-primary">Reservar</button>
                 </div>
             </div>
-            <div class="card-hotel d-flex flex-column">
-                <div>
-                    <h4>Hotel SC</h4> 
+            <div class="card card-hotel d-flex flex-column">
+                <img src="hotel.PNG" alt="" class="card-img-top">
+                <div class="card-body">
+                    <h4 class="card-title">Hotel SC</h4> 
                     <p>Ubicado en la zona este, para disfrutar de los paisajes de la region.</p> 
                 </div>
                 <div>
                     <button class="btn btn-primary">Reservar</button>
                 </div>
             </div>
-            <div class="card-hotel d-flex flex-column">
-                
-                <div>
-                    <h4>Hotel TARIJA</h4> 
+            <div class="card card-hotel d-flex flex-column">
+                <img src="hotel.PNG" alt="" class="card-img-top">
+                <div class="card-body">
+                    <h4 class="card-title">Hotel TARIJA</h4> 
                     <p>Ubicado en la zona Recoleta, con los mejores parques tematicos.</p> 
                 </div>
                 <div>
                     <button class="btn btn-primary">Reservar</button>
                 </div>
             </div>
-            <div class="card-hotel d-flex flex-column">
-                <div>
-                    <h4>Hotel TARIJA-1</h4> 
+            <div class="card card-hotel d-flex flex-column">
+                <img src="hotel.PNG" alt="" class="card-img-top">
+                <div class="card-body">
+                    <h4 class="card-title">Hotel TARIJA-1</h4> 
                     <p>Ubicado en la zona Recoleta</p> 
                 </div>
                 <div>
                     <button class="btn btn-primary">Reservar</button>
                 </div>
             </div>
-            <div class="card-hotel d-flex flex-column">
-                <div>
-                    <h4>Hotel TARIJA-2</h4> 
+            <div class="card card-hotel d-flex flex-column">
+                <img src="hotel.PNG" alt="" class="card-img-top">
+                <div class="card-body">
+                    <h4 class="card-title">Hotel TARIJA-2</h4> 
                     <p>Ubicado en la zona Recoleta</p> 
                 </div>
                 <div>
                     <button class="btn btn-primary">Reservar</button>
                 </div>
             </div>
-            <div class="card-hotel d-flex flex-column">
-                <div>
-                    <h4>Hotel TARIJA-3</h4> 
+            <div class="card card-hotel d-flex flex-column">
+                <img src="hotel.PNG" alt="" class="card-img-top">
+                <div class="card-body">
+                    <h4 class="card--title">Hotel TARIJA-3</h4> 
                     <p>Ubicado en la zona Recoleta</p> 
                 </div>
                 <div>

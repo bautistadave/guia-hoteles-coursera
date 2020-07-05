@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoteles</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">Hoteles-Bolivia</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="precios.html">Pricing</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+
+    <div class="jumbotron">
+        <h1>Hoteles-Bolivia</h1>
+    </div>
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item" aria-current="page">Pricing</li>
+            </ol>
+        </nav>
+    </div>
+
+    <div class="container">
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <a class="nav-link active" id="compare-tab" data-toggle="tab" href="#compare" role="tab" aria-controls="compare" aria-selected="true">Compare</a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" id="cards-tab" data-toggle="tab" href="#cards" role="tab" aria-controls="cards" aria-selected="false">Cards</a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" id="comments-tab" data-toggle="tab" href="#comments" role="tab" aria-controls="comments" aria-selected="false">Comments</a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" id="accordion-tab" data-toggle="tab" href="#accordion" role="tab" aria-controls="accordion" aria-selected="false">Accordion</a>
+        </li>
+      </ul>
+
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="compare" role="tabpanel" aria-labelledby="compare-tab">
+          <div class="table-responsive">
+            <table class="table table-striped">
+            <thead>
+                <th>Calidad</th>
+                <th>Pinamar</th>
+                <th>Mar de la Plata</th>
+                <th>San Clemente</th>
+                <th>Santa Teresa</th>
+              </thead>
+            <tbody>
+                <tr>
+                  <td>1 Estrella</td>
+                    <td>$100</td>
+                    <td>$200</td>
+                    <td>$300</td>
+                    <td>$400</td>
+                </tr>
+                <tr>
+                    <td>2 Estrella</td>
+                    <td>$100</td>
+                    <td>$200</td>
+                    <td>$300</td>
+                    <td>$400</td>
+                </tr>
+                <tr>
+                  <td>3 Estrella</td>
+                    <td>$100</td>
+                    <td>$200</td>
+                    <td>$300</td>
+                    <td>$400</td>
+                </tr>
+                <tr>
+                  <td>4 Estrella</td>
+                    <td>$100</td>
+                    <td>$200</td>
+                    <td>$300</td>
+                    <td>$400</td>
+                </tr>
+                <tr>
+                  <td>5 Estrella</td>
+                  <td>$100</td>
+                  <td>$200</td>
+                  <td>$300</td>
+                  <td>$400</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          
+        </div>
+        <div class="tab-pane fade" id="cards" role="tabpanel" aria-labelledby="profile-tab">
+          <div class="card card-item">
+            <div class="card-body">
+              <img src="hotel.PNG" class="card-img-top" alt="Responsive image">
+              <p class="card-text">the body</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="tab-pane fade" id="comments" role="tabpanel" aria-labelledby="comments-tab">
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, voluptatibus!</p>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        
+        <div class="tab-pane fade" id="accordion" role="tabpanel" aria-labelledby="accordion-tab">
+          <div class="accordion" id="accordionExample">
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h2 class="mb-0">
+                  <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Tarjeta Basica
+                  </button>
+                </h2>
+              </div>
+          
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium, magnam?
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h2 class="mb-0">
+                  <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Tarjeta VIP
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, distinctio.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h2 class="mb-0">
+                  <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    tarjeta Black
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, impedit.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      
+    </div>
+      
+      
+    <footer>
+        <div class="row">
+            <div class="col-sm-4 d-flex flex-column">
+                <a href="www.google.com">Google</a>
+                <a href="www.facebook.com">Facebook</a>
+                <a href="www.instagram.com">Instagram</a>
+            </div>
+            <div class="col-sm-4 d-flex flex-column">
+                <address>
+                    <h3>Oficina Central</h3>
+                    <p>Cochabamba 1915, Bolivia</p> 
+                    <p>+5913216547</p>
+                    <p>contacto@gmail.com</p>
+                </address>
+            </div>
+            <div class="col-sm-4 d-flex flex-column">
+                <a href="www.google.com">Google</a>
+                <a href="www.facebook.com">Facebook</a>
+                <a href="www.instagram.com">Instagram</a>
+                <a href="www.contacto.com">Contacto</a>
+            </div>
+        </viv>
+    </footer>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>    
+</body>
+</html>

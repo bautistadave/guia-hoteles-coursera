@@ -11,11 +11,20 @@ footer{
 }
 
 .card-hotel{
-    flex: 1 150px;
-    padding: 2px 5px 2px 5px;
+    flex: 1 200px;
+    margin-left: 20px;
     margin-top: 10px;
     justify-content: space-between;
 }
-button{
+
+.btn{
     width: 100%;
+}
+
+.table td, table th {
+    padding: 0;
+    border-top: 0;
+}
+.card-item{
+    width: 18rem;
 }
