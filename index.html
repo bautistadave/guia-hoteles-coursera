@@ -19,10 +19,13 @@
               <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
+              <a class="nav-link" href="features.html">Features</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="precios.html">Pricing</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="modal.html">Modal</a>
             </li>
           </ul>
         </div>
@@ -67,7 +70,7 @@
             <div class="card card-hotel d-flex flex-column">
                 <img src="hotel.PNG" alt="" class="card-img-top">
                 <div class="card-body">
-                    <h4 class="card-title">Hotel CBBA</h4> 
+                    <h4 class="card-title" data-toggle="tooltip" data-placement="top" title="Soy un tooltip de prueba">Hotel CBBA</h4> 
                     <p>Ubicado en la zona norte de nuestra ciudad y una vista espectacular.</p> 
                 </div>
                 <div>
@@ -131,7 +134,12 @@
                     <p>Ubicado en la zona Recoleta</p> 
                 </div>
                 <div>
-                    <button class="btn btn-primary">Reservar</button>
+                    <button class="btn btn-primary" 
+                            data-toggle="popover" 
+                            title="Ver un Popover "
+                            data-content="Popover content example.">
+                            Reservar
+                    </button>
                 </div>
             </div>
         </div>
@@ -168,5 +176,12 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>    
+    <!-- Esto deberia estar en un JS -->
+    <script>
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+        $('[data-toggle="popover"]').popover();
+      })
+    </script>
 </body>
 </html>
