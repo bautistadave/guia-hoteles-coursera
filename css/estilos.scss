@@ -1,0 +1,54 @@
+$colorFooter: #deb887;
+$colorJumbo: #f5f5f5;
+@mixin margenes($top, $bottom) {
+    margin-top: $top;
+    margin-bottom: $bottom;
+}
+
+@mixin margenes2($top, $left) {
+    margin-top: $top;
+    margin-left: $left;
+}
+
+
+.jumbotron{
+    background-image: url("banner.jpg");
+    background-color: $colorJumbo;
+    color: green;
+    width: 100%;
+}
+
+footer{
+    padding: 10px 10px 0 10px;
+    background-color: $colorFooter;
+    @include margenes(10px, 0px);
+    /*margin-bottom: 0px;
+    margin-top: 10px;*/
+}
+
+.card-hotel{
+    flex: 1 200px;
+    @include margenes2(10px, 20px);
+    /*margin-left : 20px;
+    margin-top: 10px;*/
+    justify-content: space-between;
+}
+
+.btn{
+    width: 100%;
+}
+
+.table{
+    td, th{
+      padding: 0;
+      border-top: 0;
+    }
+}
+
+/*} td, table th {
+    padding: 0;
+    border-top: 0;
+}*/
+.card-item{
+    width: 18rem;
+}
